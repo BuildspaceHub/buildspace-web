@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --poppins: "Poppins", sans-serif;
+  --brand: blue;
+  --background: #ffffff;
+  --primary-text: #ffffff;
+}
+
+@theme inline {
+  --font-poppins: var(--poppins);
+  --color-brand: var(--brand);
+  --color-background: var(--background);
+  --color-primary-text: var(--primary-text);
+}
+
+/* BASE STYLE */
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+}
+
+/* COMPONENT SYTLES */
+@layer components {
+  .btn-primary {
+    @apply bg-brand py-0.5 px-3 text-primary-text rounded-2xl;
+  }
+}

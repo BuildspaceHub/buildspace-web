@@ -2,9 +2,10 @@
 
 :root {
   --poppins: "Poppins", sans-serif;
-  --brand: blue;
+  --brand: #082158;
   --background: #ffffff;
   --primary-text: #ffffff;
+  --neutral: #475569;
 }
 
 @theme inline {
@@ -12,6 +13,7 @@
   --color-brand: var(--brand);
   --color-background: var(--background);
   --color-primary-text: var(--primary-text);
+  --color-neutral: var(--neutral);
 }
 
 /* BASE STYLE */

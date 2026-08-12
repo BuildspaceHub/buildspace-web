@@ -5,6 +5,8 @@
   --brand: blue;
   --background: #ffffff;
   --primary-text: #ffffff;
+  --primary-brand: #20428c;
+  --secondary-brand: #082158;
 }
 
 @theme inline {
@@ -12,10 +14,16 @@
   --color-brand: var(--brand);
   --color-background: var(--background);
   --color-primary-text: var(--primary-text);
+  --color-primary-brand: var(--primary-brand);
+  --color-secondary-brand: var(--secondary-brand);
 }
 
 /* BASE STYLE */
 @layer base {
+  * {
+    @apply box-border;
+  }
+  
   body {
     @apply font-poppins;
   }

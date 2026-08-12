@@ -4,12 +4,13 @@
   --poppins: "Poppins", sans-serif;
   --brand: #20428c;
   --brando: #2563eb;
-  --background: #ffffff;
-  --primary-text: #ffffff;
   --text-black: #1e1e1e;
   --text-gray: #727272;
   --bg-round: #eff2ff;
   --bg-project: #f8fafc;
+  --background: #ffffff;
+  --primary-text: #ffffff;
+  --neutral: #475569;
 }
 
 @theme inline {
@@ -22,6 +23,7 @@
   --color-text-gray: var(--text-gray);
   --color-bg-round: var(--bg-round);
   --color-bg-project: var(--bg-project);
+  --color-neutral: var(--neutral);
 }
 
 /* BASE STYLE */

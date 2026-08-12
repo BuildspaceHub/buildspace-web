@@ -28,10 +28,10 @@
 /* COMPONENT SYTLES */
 @layer components {
   .btn-primary {
-    @apply bg-brand py-3.5 px-4.5 text-primary-text rounded-4xl text-poppins;
+    @apply bg-brand py-3.5 px-4.5 text-primary-text rounded-4xl font-poppins;
   }
 
   .btn-secondary {
-    @apply py-3.5 px-4.5 border-background border-3 rounded-4xl text-poppins;
+    @apply py-3.5 px-4.5 border-background border-3 rounded-4xl font-poppins;
   }
 }

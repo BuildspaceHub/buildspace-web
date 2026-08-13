@@ -2,11 +2,16 @@
 
 :root {
   --poppins: "Poppins", sans-serif;
-  --brand: #20428c;
   --card-dark: #082158;
   --card-radius: 8px;
   --background: #ffffff;
   --primary: #ffffff;
+  --brand: #082158;
+  --background: #ffffff;
+  --primary-text: #ffffff;
+  --primary-brand: #20428c;
+  --secondary-brand: #082158;
+  --neutral: #475569;
 }
 
 @theme inline {
@@ -16,10 +21,18 @@
   --color-primary: var(--primary);
   --color-card-dark: var(--card-dark);
   --radius-card-radius: var(--card-radius);
+  --color-primary-text: var(--primary-text);
+  --color-primary-brand: var(--primary-brand);
+  --color-secondary-brand: var(--secondary-brand);
+  --color-neutral: var(--neutral);
 }
 
 /* BASE STYLE */
 @layer base {
+  * {
+    @apply box-border;
+  }
+  
   body {
     @apply font-poppins;
   }

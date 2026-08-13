@@ -3,9 +3,11 @@
 :root {
   --poppins: "Poppins", sans-serif;
   --brand: #082158;
-  --secondary-brand: #20428C;
+  /* --secondary-brand: #20428C; */
   --background: #ffffff;
   --primary-text: #ffffff;
+  --primary-brand: #20428c;
+  --secondary-brand: #082158;
   --neutral: #475569;
 }
 
@@ -15,11 +17,17 @@
   --color-secondary-brand: var(--secondary-brand);
   --color-background: var(--background);
   --color-primary-text: var(--primary-text);
+  --color-primary-brand: var(--primary-brand);
+  --color-secondary-brand: var(--secondary-brand);
   --color-neutral: var(--neutral);
 }
 
 /* BASE STYLE */
 @layer base {
+  * {
+    @apply box-border;
+  }
+  
   body {
     @apply font-poppins;
   }

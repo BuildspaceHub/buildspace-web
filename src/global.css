@@ -2,6 +2,10 @@
 
 :root {
   --poppins: "Poppins", sans-serif;
+  --card-dark: #082158;
+  --card-radius: 8px;
+  --background: #ffffff;
+  --primary: #ffffff;
   --brand: #082158;
   /* --secondary-brand: #20428C; */
   --background: #ffffff;
@@ -16,6 +20,9 @@
   --color-brand: var(--brand);
   --color-secondary-brand: var(--secondary-brand);
   --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-card-dark: var(--card-dark);
+  --radius-card-radius: var(--card-radius);
   --color-primary-text: var(--primary-text);
   --color-primary-brand: var(--primary-brand);
   --color-secondary-brand: var(--secondary-brand);
@@ -27,16 +34,23 @@
   * {
     @apply box-border;
   }
-  
+
   body {
     @apply font-poppins;
+  }
+
+  img {
+    @apply w-full h-auto block object-contain object-center;
   }
 }
 
 /* COMPONENT SYTLES */
 @layer components {
   .btn-primary {
-    @apply bg-brand py-3.5 px-4.5 text-primary-text rounded-4xl font-poppins;
+    @apply bg-brand py-1 px-4 text-primary rounded-4xl;
+  }
+  .btn-outline {
+    @apply bg-transparent border border-brand py-1 px-4 text-brand rounded-4xl;
   }
 
   .btn-secondary {

@@ -32,15 +32,22 @@
   * {
     @apply box-border;
   }
-  
+
   body {
     @apply font-poppins;
+  }
+
+  img {
+    @apply w-full h-auto block object-contain object-center;
   }
 }
 
 /* COMPONENT SYTLES */
 @layer components {
   .btn-primary {
-    @apply bg-brand py-0.5 px-3 text-primary rounded-2xl;
+    @apply bg-brand py-1 px-4 text-primary rounded-5xl;
+  }
+  .btn-outline {
+    @apply bg-transparent border border-brand py-1 px-4 text-brand rounded-5xl;
   }
 }

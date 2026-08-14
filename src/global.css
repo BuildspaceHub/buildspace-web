@@ -3,6 +3,7 @@
 :root {
   --poppins: "Poppins", sans-serif;
   --brand: #082158;
+  /* --secondary-brand: #20428C; */
   --background: #ffffff;
   --primary-text: #ffffff;
   --primary-brand: #20428c;
@@ -13,6 +14,7 @@
 @theme inline {
   --font-poppins: var(--poppins);
   --color-brand: var(--brand);
+  --color-secondary-brand: var(--secondary-brand);
   --color-background: var(--background);
   --color-primary-text: var(--primary-text);
   --color-primary-brand: var(--primary-brand);
@@ -34,6 +36,10 @@
 /* COMPONENT SYTLES */
 @layer components {
   .btn-primary {
-    @apply bg-brand py-0.5 px-3 text-primary-text rounded-2xl;
+    @apply bg-brand py-3.5 px-4.5 text-primary-text rounded-4xl font-poppins;
+  }
+
+  .btn-secondary {
+    @apply py-3.5 px-4.5 border-background border-3 rounded-4xl font-poppins;
   }
 }

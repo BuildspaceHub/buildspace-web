@@ -193,88 +193,203 @@
         </div>
       </section>
       <!-- CORE VALUES -->
-      <section class="px-4 py-16 lg:px-13 bg-primary-brand text-background">
-        <div>
-          <div
-            class="flex flex-col gap-4 justify-between lg:flex-row lg:items-center mb-10"
-          >
-            <div class="flex flex-col gap-2.5 mb-5 lg:mb-0">
-              <h2 class="text-3xl font-semibold">Core Values</h2>
-              <p class="text-sm">
-                The principles that guide how we learn, collaborate, and build
-                together.
-              </p>
-            </div>
-            <button class="btn-primary self-end lg:self-center">
-              Join community
-            </button>
+      <section class="px-4 py-16 md:px-10 bg-primary-brand text-background">
+        <div
+          class="flex flex-col gap-4 justify-between lg:flex-row lg:items-center mb-10"
+        >
+          <div class="flex flex-col gap-2.5 mb-5 lg:mb-0">
+            <h2 class="text-3xl font-semibold">Core Values</h2>
+            <p class="text-sm">
+              The principles that guide how we learn, collaborate, and build
+              together.
+            </p>
           </div>
-          <!-- CORE CARD GRID -->
+          <button class="btn-primary self-end lg:self-center">
+            Join community
+          </button>
+        </div>
+        <!-- CORE CARD GRID -->
+        <div
+          class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 xlg:grid-cols-5"
+        >
+          <div class="rounded-xl bg-brand py-8 px-4 flex flex-col gap-2">
+            <img
+              src="./src/assets/icons/lucide--computer.svg"
+              alt="Learning Icon"
+              class="w-5 h-5 md:w-7 md:h-7"
+            />
+            <h2 class="text-xl">Learn by Building</h2>
+            <p class="text-sm">Real experience beats endless tutorials.</p>
+          </div>
           <div
-            class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 xlg:grid-cols-5"
+            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
           >
-            <div class="rounded-xl bg-brand py-8 px-4 flex flex-col gap-2">
-              <img
-                src="./src/assets/icons/lucide--computer.svg"
-                alt="Learning Icon"
-                class="w-5 h-5 md:w-7 md:h-7"
-              />
-              <h2 class="text-xl">Learn by Building</h2>
-              <p class="text-sm">Real experience beats endless tutorials.</p>
-            </div>
+            <img
+              src="./src/assets/icons/octicon--people-24.svg"
+              alt="icon people"
+              class="w-5 h-5 md:w-7 md:h-7"
+            />
+            <h2 class="text-xl lg:text-2xl">Collaboration First</h2>
+            <p class="text-sm text-neutral">
+              Great software is built by teams—not individuals.
+            </p>
+          </div>
+          <div
+            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
+          >
+            <img
+              src="./src/assets/icons/boxicons--chart-trend-filled.svg"
+              alt="icon chart"
+              class="w-5 h-5 md:w-7 md:h-7"
+            />
+            <h2 class="text-xl lg:text-2xl">Growth Mindset</h2>
+            <p class="text-sm text-neutral">
+              Every project is an opportunity to improve.
+            </p>
+          </div>
+          <div
+            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
+          >
+            <img
+              src="./src/assets/icons/marketeq--check-mark-circle.svg"
+              alt="icon check-mark"
+              class="w-5 h-5 md:w-7 md:h-7"
+            />
+            <h2 class="text-xl lg:text-2xl">Consistency</h2>
+            <p class="text-sm text-neutral">
+              Small progress every day creates extraordinary developers.
+            </p>
+          </div>
+          <div
+            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
+          >
+            <img
+              src="./src/assets/icons/game-icons--self-love.svg"
+              alt="icon heart"
+              class="w-5 h-5 md:w-7 md:h-7"
+            />
+            <h2 class="text-xl lg:text-2xl">Community</h2>
+            <p class="text-sm text-neutral">
+              Everyone teaches. Everyone learns.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- TESTIMONIALS SECTION  -->
+      <section class="py-16 px-4 md:px-10 w-full mx-auto bg-[#F8FAFC]">
+        <!-- Text-Headings and writeups -->
+        <div class="text-center flex flex-col gap-3 mb-12">
+          <h2 class="text-3xl font-semibold md:text-4xl mb-2">
+            What Our Members <span class="text-brand">Say!</span>
+          </h2>
+          <p class="text-neutral max-w-xl mx-auto text-sm md:text-xl">
+            Hear from developers and designers who have grown through
+            BuildSpace.
+          </p>
+        </div>
+        <!-- Cards and Scroll Arrow -->
+        <div class="relative flex items-center justify-between gap-4">
+          <!-- Arrow left button -->
+          <button
+            id="prevBtn"
+            class="hidden w-10 h-10 rounded-full bg-blue-50 text-neutral md:flex items-center justify-center shrink-0 hover:bg-blue-100 transition cursor-pointer z-10"
+            aria-label="Previous testimonial"
+          >
+            &#8592;
+          </button>
+          <!-- TESTIMONIAL CARDS CONTAINER -->
+          <div
+            id="carouselContainer"
+            class="flex justify-between flex-nowrap gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar py-4 w-full"
+          >
+            <!-- Card 1 -->
             <div
-              class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
+              class="snap-center shrink-0 w-full bg-background p-6 rounded-2xl border border-neutral shadow-sm flex flex-col justify-between md:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)]"
             >
-              <img
-                src="./src/assets/icons/octicon--people-24.svg"
-                alt="icon people"
-                class="w-5 h-5 md:w-7 md:h-7"
-              />
-              <h2 class="text-xl lg:text-2xl">Collaboration First</h2>
-              <p class="text-sm text-neutral">
-                Great software is built by teams—not individuals.
-              </p>
+              <div>
+                <span class="flex text-amber-400 gap-1 mb-4">★★★★★</span>
+                <p class="text-sm leading-relaxed md:text-xs">
+                  "Code reviews, project planning, and sprint tasks helped me
+                  understand software development beyond writing code."
+                </p>
+              </div>
+              <div class="flex items-center gap-3 mt-6">
+                <img
+                  src="./src/assets/Images/daniel.png"
+                  alt="Daniel M."
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="font-bold text-xs text-secondary-brand">
+                    Daniel M.
+                  </h4>
+                  <p class="text-[11px] text-neutral">Backend Developer</p>
+                </div>
+              </div>
             </div>
+
+            <!-- Card 2 -->
             <div
-              class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
+              class="snap-center shrink-0 w-full bg-white p-6 rounded-2xl border border-neutral shadow-sm flex flex-col justify-between md:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)]"
             >
-              <img
-                src="./src/assets/icons/boxicons--chart-trend-filled.svg"
-                alt="icon chart"
-                class="w-5 h-5 md:w-7 md:h-7"
-              />
-              <h2 class="text-xl lg:text-2xl">Growth Mindset</h2>
-              <p class="text-sm text-neutral">
-                Every project is an opportunity to improve.
-              </p>
+              <div>
+                <span class="flex text-amber-400 gap-1 mb-4">★★★★★</span>
+                <p class="text-sm leading-relaxed md:text-xs">
+                  "Before joining BuildSpace, I only knew React from tutorials.
+                  Working on team projects taught me Git workflows, API
+                  integration, and collaboration."
+                </p>
+              </div>
+              <div class="flex items-center gap-3 mt-6">
+                <img
+                  src="./src/assets/Images/sarah.png"
+                  alt="Sarah O."
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="font-bold text-xs text-secondary-brand">
+                    Sarah O.
+                  </h4>
+                  <p class="text-[11px] text-neutral">Frontend Developer</p>
+                </div>
+              </div>
             </div>
+
+            <!-- Card 3 -->
             <div
-              class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
+              class="snap-center shrink-0 w-full bg-white p-6 rounded-2xl border border-neutral shadow-sm flex flex-col justify-between md:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)]"
             >
-              <img
-                src="./src/assets/icons/marketeq--check-mark-circle.svg"
-                alt="icon check-mark"
-                class="w-5 h-5 md:w-7 md:h-7"
-              />
-              <h2 class="text-xl lg:text-2xl">Consistency</h2>
-              <p class="text-sm text-neutral">
-                Small progress every day creates extraordinary developers.
-              </p>
-            </div>
-            <div
-              class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
-            >
-              <img
-                src="./src/assets/icons/game-icons--self-love.svg"
-                alt="icon heart"
-                class="w-5 h-5 md:w-7 md:h-7"
-              />
-              <h2 class="text-xl lg:text-2xl">Community</h2>
-              <p class="text-sm text-neutral">
-                Everyone teaches. Everyone learns.
-              </p>
+              <div>
+                <span class="flex text-amber-400 gap-1 mb-4">★★★★★</span>
+                <p class="text-sm leading-relaxed md:text-xs">
+                  "Seeing my designs become real products improved both my
+                  design thinking and communication skills."
+                </p>
+              </div>
+              <div class="flex items-center gap-3 mt-6">
+                <img
+                  src="./src/assets/Images/grace.png"
+                  alt="Grace A."
+                  class="w-10 h-10 rounded-full object-cover"
+                />
+                <div>
+                  <h4 class="font-bold text-xs text-secondary-brand">
+                    Grace A.
+                  </h4>
+                  <p class="text-[11px] text-neutral">UI/UX Designer</p>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- Right Arrow Button -->
+          <button
+            id="nextBtn"
+            class="hidden w-10 h-10 rounded-full bg-blue-50 text-blue-600 md:flex items-center justify-center shrink-0 hover:bg-blue-100 transition cursor-pointer z-10"
+            aria-label="Next testimonial"
+          >
+            &#8594;
+          </button>
         </div>
       </section>
       <!-- WHY JOIN BUILDSPACE SECTION -->
@@ -300,11 +415,11 @@
           class="grid grid-cols-1 lg:grid-cols-2 gap-12 justify-between items-center w-full"
         >
           <!-- Left line -->
-          <ol class="relative border-l-2 border-blue-100 ml-4 space-y-15">
+          <ol class="relative border-l-2 border-brand ml-4 space-y-11">
             <!-- Item 1 -->
             <li class="relative pl-8">
               <span
-                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm flex items-center justify-center shadow-md"
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-brand text-background font-semibold text-sm flex items-center justify-center shadow-md"
               >
                 1
               </span>
@@ -312,20 +427,19 @@
                 class="pb-6 border-b border-gray-200 w-full lg:inline-block lg:w-auto"
               >
                 <h3
-                  class="font-bold text-gray-900 text-base font-poppins mb-4 text-[18px]"
+                  class="font-semibold text-gray-900 text-base font-poppins mb-4 text-[18px]"
                 >
                   Learn by Building
                 </h3>
-                <p class="text-sm text-gray-600 mt-1 font-poppins text-[18px]">
+                <p class="text-sm text-neutral md:text-[18px]">
                   Work on real projects instead of only following tutorials.
                 </p>
               </div>
             </li>
-
             <!-- Item 2 -->
             <li class="relative pl-8">
               <span
-                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm flex items-center justify-center shadow-md"
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-brand text-background font-semibold text-sm flex items-center justify-center shadow-md"
               >
                 2
               </span>
@@ -333,20 +447,19 @@
                 class="pb-6 border-b border-gray-200 w-full lg:inline-block lg:w-auto"
               >
                 <h3
-                  class="font-bold text-gray-900 text-base font-poppins mb-4 text-[18px]"
+                  class="font-semibold text-gray-900 text-base mb-4 text-[18px]"
                 >
                   Collaborate with Teams
                 </h3>
-                <p class="text-sm text-gray-600 mt-1 font-poppins text-[18px]">
+                <p class="text-sm text-neutral md:text-[18px]">
                   Experience how designers and developers work together.
                 </p>
               </div>
             </li>
-
             <!-- Item 3 -->
             <li class="relative pl-8">
               <span
-                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm flex items-center justify-center shadow-md"
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-brand text-background text-sm flex items-center justify-center shadow-md"
               >
                 3
               </span>
@@ -354,20 +467,19 @@
                 class="pb-6 border-b border-gray-200 w-full lg:inline-block lg:w-auto"
               >
                 <h3
-                  class="font-bold text-gray-900 text-base font-poppins mb-4 text-[18px]"
+                  class="font-semibold text-gray-900 text-base mb-4 text-[18px]"
                 >
                   Receive Mentorship
                 </h3>
-                <p class="text-sm text-gray-600 mt-1 font-poppins text-[18px]">
+                <p class="text-sm text-neutral md:text-[18px]">
                   Get constructive feedback from mentors and peers.
                 </p>
               </div>
             </li>
-
             <!-- Item 4 -->
             <li class="relative pl-8">
               <span
-                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm flex items-center justify-center shadow-md"
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-brand text-background font-semibold text-sm flex items-center justify-center shadow-md"
               >
                 4
               </span>
@@ -375,20 +487,19 @@
                 class="pb-6 border-b border-gray-200 w-full lg:inline-block lg:w-auto"
               >
                 <h3
-                  class="font-bold text-gray-900 text-base font-poppins mb-4 text-[18px]"
+                  class="font-semibold text-gray-900 text-base mb-4 text-[18px]"
                 >
                   Build a Portfolio
                 </h3>
-                <p class="text-sm text-gray-600 mt-1 font-poppins text-[18px]">
+                <p class="text-sm text-neutral md:text-[18px]">
                   Create projects you can confidently showcase.
                 </p>
               </div>
             </li>
-
             <!-- Item 5 -->
             <li class="relative pl-8">
               <span
-                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-blue-600 text-white font-bold text-sm flex items-center justify-center shadow-md"
+                class="absolute -left-4 top-0 w-8 h-8 rounded-full bg-brand text-background font-semibold text-sm flex items-center justify-center shadow-md"
               >
                 5
               </span>
@@ -396,11 +507,11 @@
                 class="pb-6 border-b border-gray-200 w-full lg:inline-block lg:w-auto"
               >
                 <h3
-                  class="font-bold text-gray-900 text-base font-poppins mb-4 text-[18px]"
+                  class="font-semibold text-gray-900 text-base mb-4 text-[18px]"
                 >
                   Prepare for Employment
                 </h3>
-                <p class="text-sm text-gray-600 mt-1 font-poppins text-[18px]">
+                <p class="text-sm text-neutral md:text-[18px]">
                   Develop skills that prepare you for internships and jobs.
                 </p>
               </div>
@@ -415,6 +526,75 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
+    <footer
+      class="px-4 pt-16 pb-4 md:px-10 flex flex-col gap-4 bg-background border-t border-gray-100"
+    >
+      <div
+        class="grid grid-cols-1 place-items-center gap-10 mb-10 md:grid-cols-3 lg:grid-cols-4 md:place-items-start"
+      >
+        <!-- Logo & write-up -->
+        <div
+          class="flex flex-col items-center lg:text-left md:items-start md:row-span-2"
+        >
+          <!-- Logo Icon & Logo Text -->
+          <div class="flex gap-3 mb-4">
+            <div class="w-5 h-5">
+              <img
+                src="/src/assets/Images/logo.png"
+                alt="BuildSpace-Logo"
+                class="brand logo"
+              />
+            </div>
+            <p class="text-brand text-xl font-bold font-stretch-100%">
+              BuildSpace
+            </p>
+          </div>
+
+          <p
+            class="text-sm md:text-[18px] text-neutral text-center md:text-left"
+          >
+            Building your next real-world projects.
+          </p>
+        </div>
+
+        <div class="text-center md:text-left">
+          <h5 class="text-brand text-xl capitalize font-semibold mb-5">
+            Quick Links
+          </h5>
+          <ul class="text-[18px] md:text-xl text-neutral">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Tracks</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="text-center md:text-left">
+          <p class="text-brand font-semibold text-xl capitalize mb-5">
+            Community
+          </p>
+          <ul class="text-[18px] md:text-xl text-neutral">
+            <li><a href="#">Trello</a></li>
+            <li><a href="#">Slack</a></li>
+            <li><a href="#">WhatsApp</a></li>
+          </ul>
+        </div>
+        <div class="text-center md:text-left">
+          <p class="text-brand font-semibold text-xl capitalize mb-5">
+            Contact
+          </p>
+          <ul class="text-[18px] md:text-xl text-neutral">
+            <li><a href="#">buildspace@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="text-center text-[12px] text-neutral">
+        © 2026 BuildSpace &bull; Built by learners. Powered by collaboration
+      </p>
+    </footer>
+    <!-- SCRIPTS -->
     <script>
       const container = document.getElementById("carouselContainer");
       const prevBtn = document.getElementById("prevBtn");
@@ -432,5 +612,6 @@
         container.scrollBy({ left: -cardWidth, behavior: "smooth" });
       });
     </script>
+    <script src="src/script.js"></script>
   </body>
 </html>

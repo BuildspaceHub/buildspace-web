@@ -36,7 +36,7 @@
   }
 
   body {
-    @apply font-poppins;
+    @apply font-poppins bg-background;
   }
 
   img {

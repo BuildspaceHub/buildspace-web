@@ -29,6 +29,10 @@
   body {
     @apply font-poppins;
   }
+
+  img{
+    @apply w-full h-auto object-cover;
+  }
 }
 
 /* COMPONENT SYTLES */

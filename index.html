@@ -30,6 +30,7 @@
     <title>BuildSpace Community — Learn, Build & Grow With Developers</title>
   </head>
   <body>
+    
     <header class="sticky top-0 z-100">
       <div class="p-4 bg-background flex justify-between shadow-2xs">
         <!-- LOGO -->
@@ -117,34 +118,39 @@
           </div>
         </div>
       </section>
-      <!-- ABOUT SECTION -->
-      <section class="px-4 py-16 md:px-10 border-t border-gray-100">
-        <div>
+  
+    <main>
+      <!-- ABOUT SECTION-->
+      <section class="w-full px-5 py-6">
+        <div class="w-full lg:w-full mx-auto lg:py-17.5 lg:max-w-360">
           <div
-            class="w-full flex flex-col gap-6 lg:flex-row justify-between mb-10"
+            class="flex flex-col gap-6 lg:flex-row justify-between lg:h-38 md:flex-row mb-10"
           >
-            <h2 class="text-3xl lg:text-4xl font-semibold">
+            <h2 class="text-3xl font-semibold md:w-full lg:text-[44px] md:text-3xl">
               Why
               <span class="text-primary-brand">BuildSpace </span>Exist?
             </h2>
             <p
-              class="py-2.5 text-sm line-[25px] text-neutral md:text-xl max-w-lg"
+              class="flex text-nuetral flex-wrap py-2.5 line-[25px] md:text-[15px] lg:text-2xl"
             >
               We create an environment where developers and designers gain
               practical experiencee by working together on meaningful projects.
             </p>
           </div>
-
-          <div class="w-full flex flex-col gap-15 justify-between lg:flex-row">
+          <div class="w-full flex flex-col gap-8 mb-20 md:flex-row">
             <div
-              class="bg-[url('./src/assets/images/storyImageBg.jpg')] relative rounded-[20px] flex overflow-hidden w-full h-70 lg:h-auto bg-cover bg-center bg-no-repeat"
+              class="bg-[url('./src/images/storyImageBg.jpg')] relative rounded-[20px] flex overflow-hidden min-h-90 bg-cover md:w-full bg-center bg-no-repeat lg:rounded-[20px]"
             >
               <div
-                class="absolute bg-linear-to-b from-transparent to-primary-brand bottom-0 left-0 w-full h-1/2 text-primary-text"
+                class="absolute bg-linear-to-b from-transparent to-primary-brand bottom-0 left-0 right-0 w-full h-1/2 text-primary-text p-4"
               >
-                <div class="w-full absolute bottom-0 px-5 py-10">
-                  <h3 class="text-2xl font-semibold mb-2">Our Story</h3>
-                  <p class="text-xs">
+                <div class="bottom-0 lg:h-37.5">
+                  <h3
+                    class="mb-5 text-2xl lg:text-[40px] lg:line-0 lg:font-medium"
+                  >
+                    Our Story
+                  </h3>
+                  <p class="w-full text-sm lg:text-2xl">
                     BuildSpace is a collaborative community where aspiring
                     developers, designer, and engineers gain real-world
                     experience by building modern software together.
@@ -152,37 +158,40 @@
                 </div>
               </div>
             </div>
-            <!-- GOALS -->
-            <div class="flex flex-col gap-10">
-              <!-- MISSION CARD -->
+            <div class="flex flex-col gap-8 md:w-6/7 lg:w-full">
+              <!-- mission -->
               <div
                 class="rounded-xl border p-7.5 flex flex-col shadow-2xl shadow-[#00000013] gap-2.5 border-[#DBEAFE]"
               >
                 <!-- Icon -->
                 <img
-                  src="./src/assets/icons/lucide--rocket.svg"
-                  alt="icon rocket"
-                  class="w-10 h-10"
+                  src="./src/icons/lucide--rocket.svg"
+                  alt="Mission Icon"
+                  class="w-8 h-8"
                 />
                 <h2 class="text-2xl font-semibold">Our Mission</h2>
-                <p class="text-sm text-[#1e1e1e]">
+                <p
+                  class="text-sm font-normal text-nuetral lg:w-121.75 lg:h-30 lg:text-[20px]"
+                >
                   To empower aspiring developers and designers by providing
                   hands-on collaborative experience that prepares them for real
-                  careers in technology
+                  careers in technology.
                 </p>
               </div>
-              <!-- VISSION CARD -->
+              <!-- vision -->
               <div
-                class="rounded-xl border p-7.5 flex flex-col shadow-2xl shadow-[#00000013] gap-2.5 border-[#DBEAFE] text-primary-text bg-primary-brand"
+                class="rounded-xl text-background border p-7.5 flex flex-col shadow-2xl bg-brand shadow-[#00000013] gap-2.5 border-[#DBEAFE]"
               >
                 <!-- Icon -->
                 <img
-                  src="./src/assets/icons/material-symbols--star-rounded.svg"
-                  alt="icon-star"
-                  class="w-10 h-10"
+                  src="./src/icons/material-symbols--star-rounded.svg"
+                  alt="Star Icon"
+                  class="w-8 h-8"
                 />
                 <h2 class="text-2xl font-semibold">Our Vision</h2>
-                <p class="text-sm">
+                <p
+                  class="text-sm font-normal lg:w-121.75 lg:h-30 lg:text-[20px]"
+                >
                   We envision a future where anyone, regardless of background,
                   can build meaningful products, grow with talented teammates,
                   and launch a successful career in tech
@@ -194,10 +203,10 @@
       </section>
       <!-- CORE VALUES -->
       <section class="px-4 py-16 md:px-10 bg-primary-brand text-background">
-        <div
+        <!-- <div
           class="flex flex-col gap-4 justify-between lg:flex-row lg:items-center mb-10"
-        >
-          <div class="flex flex-col gap-2.5 mb-5 lg:mb-0">
+        > -->
+          <!-- <div class="flex flex-col gap-2.5 mb-5 lg:mb-0">
             <h2 class="text-3xl font-semibold">Core Values</h2>
             <p class="text-sm">
               The principles that guide how we learn, collaborate, and build
@@ -207,12 +216,12 @@
           <button class="btn-primary self-end lg:self-center">
             Join community
           </button>
-        </div>
+        </div> -->
         <!-- CORE CARD GRID -->
         <div
-          class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 xlg:grid-cols-5"
+          class="grid grid-cols-1 gap-5"
         >
-          <div class="rounded-xl bg-brand py-8 px-4 flex flex-col gap-2">
+          <!--<div class="rounded-xl bg-brand py-8 px-4 flex flex-col gap-2">
             <img
               src="./src/assets/icons/lucide--computer.svg"
               alt="Learning Icon"
@@ -220,58 +229,127 @@
             />
             <h2 class="text-xl">Learn by Building</h2>
             <p class="text-sm">Real experience beats endless tutorials.</p>
-          </div>
+          </div> -->
           <div
-            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
+            class="w-full p-4 flex flex-col gap-8 text-primary-text rounded-[20px] bg-primary-brand"
           >
-            <img
-              src="./src/assets/icons/octicon--people-24.svg"
-              alt="icon people"
-              class="w-5 h-5 md:w-7 md:h-7"
-            />
-            <h2 class="text-xl lg:text-2xl">Collaboration First</h2>
-            <p class="text-sm text-neutral">
-              Great software is built by teams—not individuals.
-            </p>
-          </div>
-          <div
-            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
-          >
-            <img
-              src="./src/assets/icons/boxicons--chart-trend-filled.svg"
-              alt="icon chart"
-              class="w-5 h-5 md:w-7 md:h-7"
-            />
-            <h2 class="text-xl lg:text-2xl">Growth Mindset</h2>
-            <p class="text-sm text-neutral">
-              Every project is an opportunity to improve.
-            </p>
-          </div>
-          <div
-            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
-          >
-            <img
-              src="./src/assets/icons/marketeq--check-mark-circle.svg"
-              alt="icon check-mark"
-              class="w-5 h-5 md:w-7 md:h-7"
-            />
-            <h2 class="text-xl lg:text-2xl">Consistency</h2>
-            <p class="text-sm text-neutral">
-              Small progress every day creates extraordinary developers.
-            </p>
-          </div>
-          <div
-            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
-          >
-            <img
-              src="./src/assets/icons/game-icons--self-love.svg"
-              alt="icon heart"
-              class="w-5 h-5 md:w-7 md:h-7"
-            />
-            <h2 class="text-xl lg:text-2xl">Community</h2>
-            <p class="text-sm text-neutral">
-              Everyone teaches. Everyone learns.
-            </p>
+            <div
+              class="w-full relative flex flex-col gap-4 md:flex-row justify-between"
+            >
+              <div class="flex flex-col gap-2.5">
+                <h2 class="text-2xl font-semibold">Core Values</h2>
+                <p class="text-sm">
+                  The principles that guide how we learn, collaborate, and build
+                  together.
+                </p>
+              </div>
+              <button class="btn-primary self-end cursor-pointer lg:py-4 lg:px-8">Join community</button>
+              <!-- <div
+                class="md:justify-evenly rounded-full bg-secondary-brand py-[8px] px-[10px] text-[14px] lg:w-[238px] lg:h-[68px] lg:py-[16px] lg:px-[20px] lg:text-[24px] cursor-pointer "
+              >
+                Join Community
+              </div> -->
+            </div>
+            <div
+              class="w-full h-fit flex flex-col gap-4 md:flex-row justify-between lg:flex-4 lg:h-115 md:flex-wrap"
+            >
+              <div
+                class="w-full h-55.5 rounded-xl bg-secondary-brand py-10 px-3.5 flex flex-col gap-2 lg:w-77 lg:h-55.5 lg:py-5 lg:px-6"
+              >
+                <img
+                  src="./src/icons/lucide--computer.svg"
+                  alt="Learning Icon"
+                  class="w-8 h-8"
+                />
+                <h2
+                  class="w-66.25 h-9 text-[24px] font-light lg:text-[24px] lg:w-35 lg:h-24"
+                >
+                  Learn by Building
+                </h2>
+                <p
+                  class="w-66.25 h-12 text-[16px] font-normal lg:w-65 lg:h-12"
+                >
+                  Real experience beats endless tutorials.
+                </p>
+              </div>
+              <div
+                class="w-full h-55.5 rounded-xl bg-background text-black py-10 px-3.5 flex flex-col gap-2 md:w-77 lg:h-55.5 lg:py-5 lg:px-6"
+              >
+                <img
+                  src="./src/icons/octicon--people-24.svg"
+                  alt="Collaboration Icon"
+                  class="w-8 h-8"
+                />
+                <h2
+                  class="w-66.25 h-9 text-[24px] font-light lg:text-[32px] lg:w-56 lg:h-24"
+                >
+                  Collaboration First
+                </h2>
+                <p
+                  class="w-full h-12 text-[16px] font-normal lg:w-65 lg:h-12"
+                >
+                  Great software is built by teams—not individuals.
+                </p>
+              </div>
+              <div
+                class="w-full h-55.5 rounded-xl bg-background text-black py-10 px-3.5 flex flex-col gap-2 md:w-77 lg:h-55.5 lg:py-5 lg:px-6"
+              >
+                <img
+                  src="./src/icons/boxicons--chart-trend-filled.svg"
+                  alt="Growth Mindset Icon"
+                  class="w-8 h-8"
+                />
+                <h2
+                  class="w-66.25 h-9 text-[24px] font-light lg:text-[24px] lg:w-31.75 lg:h-24"
+                >
+                  Growth Mindset
+                </h2>
+                <p
+                  class="w-full h-12 text-[16px] font-normal lg:w-65 lg:h-12"
+                >
+                  Every project is an opportunity to improve.
+                </p>
+              </div>
+              <div
+                class="w-full h-55.5 rounded-xl bg-background text-black py-10 px-3.5 flex flex-col gap-2 md:w-77 lg:h-55.5 lg:py-5 lg:px-6"
+              >
+                <img
+                  src="./src/icons/marketeq--check-mark-circle.svg"
+                  alt="Consistency Icon"
+                  class="w-8 h-8"
+                />
+                <h2
+                  class="w-66.25 h-9 text-[24px] font-light lg:text-[24px] lg:w-48.75 lg:h-11.5"
+                >
+                  Consistency
+                </h2>
+                <p
+                  class="w-full h-12 text-[16px] font-normal lg:w-65 lg:h-12"
+                >
+                  Small progress every day creates extraordinary developers.
+                </p>
+              </div>
+              <div
+                class="w-full h-55.5 rounded-xl bg-background text-black py-10 px-3.5 flex flex-col gap-2 md:w-77 lg:h-55.5 lg:py-5 lg:px-6"
+              >
+                <img
+                  src="./src/icons/game-icons--self-love.svg"
+                  alt="community Icon"
+                  class="w-8 h-8"
+                />
+                <h2
+                  class="w-66.25 h-9 text-[24px] font-light lg:text-[32px] lg:w-47 lg:h-12"
+                >
+                  Community
+                </h2>
+                <p
+                  class="w-66.25 h-12 text-[16px] font-normal lg:w-65 lg:h-12"
+                >
+                  Everyone teaches. <br />
+                  Everyone learns.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -287,13 +365,13 @@
             BuildSpace.
           </p>
         </div>
-        <!-- Cards and Scroll Arrow -->
-        <div class="relative flex items-center justify-between gap-4">
-          <!-- Arrow left button -->
+        <!-- --Arrow-- -->
+        <div
+          class="relative flex items-center justify-center gap-4 max-w-5xl mx-auto"
+        >
           <button
             id="prevBtn"
             class="hidden w-10 h-10 rounded-full bg-blue-50 text-neutral md:flex items-center justify-center shrink-0 hover:bg-blue-100 transition cursor-pointer z-10"
-            aria-label="Previous testimonial"
           >
             &#8592;
           </button>
@@ -327,7 +405,6 @@
                 </div>
               </div>
             </div>
-
             <!-- Card 2 -->
             <div
               class="snap-center shrink-0 w-full bg-white p-6 rounded-2xl border border-neutral shadow-sm flex flex-col justify-between md:w-[calc(50%-8px)] lg:w-[calc(33.333%-16px)]"
@@ -552,7 +629,7 @@
           </div>
 
           <p
-            class="text-sm md:text-[18px] text-neutral text-center md:text-left"
+                       class="text-sm md:text-[18px] text-neutral text-center md:text-left"
           >
             Building your next real-world projects.
           </p>

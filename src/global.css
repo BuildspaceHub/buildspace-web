@@ -42,6 +42,10 @@
   img {
     @apply w-full h-auto block object-contain object-center;
   }
+
+  img{
+    @apply w-full h-auto object-cover;
+  }
 }
 
 /* COMPONENT SYTLES */

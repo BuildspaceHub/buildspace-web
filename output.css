@@ -873,6 +873,9 @@
     @media (width >= 48rem) {
       scroll-margin-top: calc(var(--spacing) * 52);
     }
+    @media (width >= 64rem) {
+      scroll-margin-top: calc(var(--spacing) * 36);
+    }
   }
   button {
     cursor: pointer;

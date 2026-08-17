@@ -48,7 +48,7 @@
   }
 
   section {
-    @apply scroll-mt-56 md:scroll-mt-52;
+    @apply scroll-mt-56 md:scroll-mt-52 lg:scroll-mt-36;
   }
 
   button {

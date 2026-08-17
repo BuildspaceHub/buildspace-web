@@ -35,12 +35,20 @@
     @apply box-border;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply font-poppins bg-background;
   }
 
   img {
     @apply w-full h-auto block object-contain object-center;
+  }
+
+  section {
+    scroll-margin-top: 50px;
   }
 }
 

@@ -48,7 +48,11 @@
   }
 
   section {
-    scroll-margin-top: 50px;
+    @apply scroll-mt-56 md:scroll-mt-52;
+  }
+
+  button {
+    @apply cursor-pointer;
   }
 }
 

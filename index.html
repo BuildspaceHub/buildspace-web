@@ -46,7 +46,7 @@
           <a href="#testimonials" class="px-2">Testimonials</a>
         </nav>
         <!-- MOBILE TOGGLE -->
-        <button id="mobile-toggle" class="md:hidden">
+        <button id="mobile-toggle" class="lg:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -65,17 +65,35 @@
           </svg>
         </button>
         <!-- CTA -->
-        <button class="btn-primary hidden md:block">Join Community</button>
+        <button class="btn-primary hidden lg:block">Join Community</button>
       </div>
       <!-- MOBILE NAV -->
       <nav
-        class="w-full max-h-0 bg-background overflow-hidden opacity-0 transition-all duration-700 ease-in-out"
         id="mobile-navbar"
+        class="lg:hidden w-full bg-background overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-300 ease-in-out"
       >
         <div class="flex flex-col items-center gap-4 p-4">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#testimonials">Testimonials</a>
+          <a
+            href="#home"
+            class="mobile-nav-link hover:text-brand transition-colors duration-200"
+          >
+            Home
+          </a>
+
+          <a
+            href="#about"
+            class="mobile-nav-link hover:text-brand transition-colors duration-200"
+          >
+            About
+          </a>
+
+          <a
+            href="#testimonials"
+            class="mobile-nav-link hover:text-brand transition-colors duration-200"
+          >
+            Testimonials
+          </a>
+
           <button class="btn-primary">Join Community</button>
         </div>
       </nav>

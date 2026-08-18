@@ -35,9 +35,9 @@
     @apply box-border;
   }
 
-  html {
+  /* html {
     scroll-behavior: smooth;
-  }
+  } */
 
   body {
     @apply font-poppins bg-background;

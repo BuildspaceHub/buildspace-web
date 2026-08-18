@@ -46,7 +46,11 @@
           <a href="#testimonials" class="px-2">Testimonials</a>
         </nav>
         <!-- MOBILE TOGGLE -->
-        <button id="mobile-toggle" class="lg:hidden">
+        <button
+          id="mobile-toggle"
+          class="lg:hidden"
+          aria-roledescription="open mobile menu"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -70,6 +74,7 @@
           target="_blank"
           rel="noopener noreferrer"
           class="btn-primary hidden lg:block"
+          role="button"
         >
           Join Community
         </a>
@@ -106,6 +111,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="btn-primary"
+            role="button"
           >
             Join Community
           </a>
@@ -131,6 +137,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="btn-primary"
+                role="button"
               >
                 Join Community
               </a>
@@ -142,6 +149,7 @@
             <img
               src="./src/assets/Images/hero-illustration.jpg"
               alt="hero image illustration"
+              role="banner"
             />
           </div>
         </div>
@@ -257,6 +265,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="btn-primary self-end lg:self-center"
+            role="button"
           >
             Join Community
           </a>
@@ -325,6 +334,84 @@
             <p class="text-sm text-neutral">
               Everyone teaches. Everyone learns.
             </p>
+          </div>
+        </div>
+      </section>
+      <!-- HOW IT WORKS -->
+      <section class="px-4 py-16 md:px-10 bg-background text-foreground">
+        <div class="flex flex-col lg:flex-row lg:gap-30">
+          <!-- ILLUSTRATION -->
+          <div class="w-full relative mb-10">
+            <div
+              class="absolute -top-2 -right-2 bg-brand w-1/2 h-1/2 rounded-2xl z-10 lg:-top-5 lg:-right-5"
+            ></div>
+            <div class="w-full overflow-hidden rounded-2xl relative z-20">
+              <img
+                src="./src/assets/Images/storyImageBg.jpg"
+                alt="team collaboration"
+              />
+            </div>
+          </div>
+          <!-- STEPS -->
+          <div class="w-full">
+            <h2 class="text-2xl mb-3 md:text-3xl font-semibold">
+              How it <span class="text-brand"> works?</span>
+            </h2>
+            <p class="text-sm text-neutral mb-3 md:text-xl">
+              Your journey from learner to contributor
+            </p>
+            <a
+              href="https://wa.me/2347085660421?text=Hello%20BuildSpace%2C%20I%27d%20like%20to%20join%20the%20community."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary mb-10 block w-fit"
+              role="button"
+            >
+              Join Community
+            </a>
+            <div class="space-y-8 grid grid-cols-2">
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >1</span
+                >
+                <p class="text-sm md:text-xl text-neutral">
+                  Join the Community
+                </p>
+              </div>
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >2</span
+                >
+                <p class="text-sm text-neutral md:text-xl">Choose Your Track</p>
+              </div>
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >3</span
+                >
+                <p class="text-sm text-neutral md:text-xl">Join a Team</p>
+              </div>
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >4</span
+                >
+                <p class="text-sm text-neutral md:text-xl">
+                  Build real products
+                </p>
+              </div>
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >5</span
+                >
+                <p class="text-sm text-neutral md:text-xl">
+                  Grow your portfolio
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

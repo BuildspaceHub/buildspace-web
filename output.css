@@ -250,16 +250,13 @@
   .z-20 {
     z-index: 20;
   }
+  .z-60 {
+    z-index: 60;
+  }
   .z-100 {
     z-index: 100;
   }
   .z-1000 {
-    z-index: 1000;
-  }
-  .z-\[100\] {
-    z-index: 100;
-  }
-  .z-\[1000\] {
     z-index: 1000;
   }
   .container {
@@ -579,12 +576,6 @@
   .border-brand {
     border-color: var(--brand);
   }
-  .border-brand\/10 {
-    border-color: var(--brand);
-    @supports (color: color-mix(in lab, red, red)) {
-      border-color: color-mix(in oklab, var(--brand) 10%, transparent);
-    }
-  }
   .border-brand\/20 {
     border-color: var(--brand);
     @supports (color: color-mix(in lab, red, red)) {
@@ -625,18 +616,6 @@
     background-color: var(--brand);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--brand) 2%, transparent);
-    }
-  }
-  .bg-brand\/5 {
-    background-color: var(--brand);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--brand) 5%, transparent);
-    }
-  }
-  .bg-brand\/20 {
-    background-color: var(--brand);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--brand) 20%, transparent);
     }
   }
   .bg-green-200 {
@@ -692,9 +671,6 @@
   }
   .p-0 {
     padding: 0px;
-  }
-  .p-0\.5 {
-    padding: calc(var(--spacing) * 0.5);
   }
   .p-1 {
     padding: var(--spacing);
@@ -832,10 +808,6 @@
   .leading-2 {
     --tw-leading: calc(var(--spacing) * 2);
     line-height: calc(var(--spacing) * 2);
-  }
-  .leading-2\.5 {
-    --tw-leading: calc(var(--spacing) * 2.5);
-    line-height: calc(var(--spacing) * 2.5);
   }
   .leading-relaxed {
     --tw-leading: var(--leading-relaxed);
@@ -1017,9 +989,6 @@
     .md\:px-13 {
       padding-inline: calc(var(--spacing) * 13);
     }
-    .md\:py-0\.5 {
-      padding-block: calc(var(--spacing) * 0.5);
-    }
     .md\:text-center {
       text-align: center;
     }
@@ -1055,14 +1024,8 @@
     }
   }
   @media (width >= 64rem) {
-    .lg\:-top-3 {
-      top: calc(var(--spacing) * -3);
-    }
     .lg\:-top-5 {
       top: calc(var(--spacing) * -5);
-    }
-    .lg\:-right-3 {
-      right: calc(var(--spacing) * -3);
     }
     .lg\:-right-5 {
       right: calc(var(--spacing) * -5);
@@ -1108,12 +1071,6 @@
     }
     .lg\:items-start {
       align-items: flex-start;
-    }
-    .lg\:gap-12 {
-      gap: calc(var(--spacing) * 12);
-    }
-    .lg\:gap-20 {
-      gap: calc(var(--spacing) * 20);
     }
     .lg\:gap-30 {
       gap: calc(var(--spacing) * 30);

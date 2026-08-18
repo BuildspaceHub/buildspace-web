@@ -50,6 +50,8 @@
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --leading-relaxed: 1.625;
+    --radius-sm: 0.25rem;
+    --radius-md: 0.375rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
     --radius-4xl: 2rem;
@@ -251,6 +253,15 @@
   .z-100 {
     z-index: 100;
   }
+  .z-1000 {
+    z-index: 1000;
+  }
+  .z-\[100\] {
+    z-index: 100;
+  }
+  .z-\[1000\] {
+    z-index: 1000;
+  }
   .container {
     width: 100%;
     @media (width >= 40rem) {
@@ -274,6 +285,9 @@
   }
   .mx-auto {
     margin-inline: auto;
+  }
+  .my-6 {
+    margin-block: calc(var(--spacing) * 6);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -520,6 +534,12 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -538,6 +558,10 @@
   .border-l-2 {
     border-left-style: var(--tw-border-style);
     border-left-width: 2px;
+  }
+  .border-l-3 {
+    border-left-style: var(--tw-border-style);
+    border-left-width: 3px;
   }
   .border-l-4 {
     border-left-style: var(--tw-border-style);
@@ -596,6 +620,24 @@
   }
   .bg-brand {
     background-color: var(--brand);
+  }
+  .bg-brand\/2 {
+    background-color: var(--brand);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--brand) 2%, transparent);
+    }
+  }
+  .bg-brand\/5 {
+    background-color: var(--brand);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--brand) 5%, transparent);
+    }
+  }
+  .bg-brand\/20 {
+    background-color: var(--brand);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--brand) 20%, transparent);
+    }
   }
   .bg-green-200 {
     background-color: var(--color-green-200);
@@ -729,6 +771,12 @@
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
   }
+  .pl-2 {
+    padding-left: calc(var(--spacing) * 2);
+  }
+  .pl-3 {
+    padding-left: calc(var(--spacing) * 3);
+  }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
@@ -737,6 +785,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-left {
+    text-align: left;
   }
   .font-poppins {
     font-family: var(--poppins);
@@ -951,14 +1002,26 @@
     .md\:place-items-start {
       place-items: start;
     }
+    .md\:items-center {
+      align-items: center;
+    }
     .md\:items-start {
       align-items: flex-start;
+    }
+    .md\:justify-between {
+      justify-content: space-between;
     }
     .md\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
     }
     .md\:px-13 {
       padding-inline: calc(var(--spacing) * 13);
+    }
+    .md\:py-0\.5 {
+      padding-block: calc(var(--spacing) * 0.5);
+    }
+    .md\:text-center {
+      text-align: center;
     }
     .md\:text-left {
       text-align: left;

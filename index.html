@@ -30,8 +30,11 @@
     <title>BuildSpace Community — Learn, Build & Grow With Developers</title>
   </head>
   <body>
-    <marquee behavior="" direction="" class="bg-red-200 text-red-800 fixed bottom-0 left-0 right-0 p-1 z-60">
-     🚧 Buildspace community website still under construction ⚠️...  But you can still be part of us 🫂
+    <marquee
+      class="bg-red-200 text-red-800 fixed bottom-0 left-0 right-0 p-1 z-1000 text-xs"
+    >
+      🚧 Buildspace community website still under construction ⚠️... But you can
+      still be part of us 🫂
     </marquee>
     <header class="sticky top-0 z-100">
       <div class="p-4 bg-background flex justify-between shadow-2xs">
@@ -277,9 +280,11 @@
         <div
           class="grid grid-cols-1 gap-5 md:grid-cols-3 lg:grid-cols-4 xlg:grid-cols-5"
         >
-          <div class="rounded-xl bg-brand py-8 px-4 flex flex-col gap-2">
+          <div
+            class="rounded-xl bg-background text-brand py-8 px-4 flex flex-col gap-2"
+          >
             <img
-              src="./src/assets/icons/lucide--computer.svg"
+              src="./src/assets/icons/lucide--rocket.svg"
               alt="Learning Icon"
               class="w-5 h-5 md:w-7 md:h-7"
             />
@@ -373,7 +378,7 @@
               Join Community
             </a>
             <div class="space-y-8 grid grid-cols-2">
-              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+              <div class="pl-4 border-l-3 border-primary-brand space-y-2">
                 <span
                   class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
                   >1</span
@@ -382,21 +387,21 @@
                   Join the Community
                 </p>
               </div>
-              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+              <div class="pl-4 border-l-3 border-primary-brand space-y-2">
                 <span
                   class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
                   >2</span
                 >
                 <p class="text-sm text-neutral md:text-xl">Choose Your Track</p>
               </div>
-              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+              <div class="pl-4 border-l-3 border-primary-brand space-y-2">
                 <span
                   class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
                   >3</span
                 >
                 <p class="text-sm text-neutral md:text-xl">Join a Team</p>
               </div>
-              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+              <div class="pl-4 border-l-3 border-primary-brand space-y-2">
                 <span
                   class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
                   >4</span
@@ -405,7 +410,7 @@
                   Build real products
                 </p>
               </div>
-              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+              <div class="pl-4 border-l-3 border-primary-brand space-y-2">
                 <span
                   class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
                   >5</span
@@ -421,9 +426,10 @@
       <!-- PROJECTS -->
       <section class="px-4 py-16 md:px-10">
         <div>
-          <div class="text-center mb-10">
+          <div class="text-left md:text-center mb-10">
             <h2 class="text-2xl md:text-3xl font-semibold mb-3">
-              Featured/Upcoming <span class="text-brand">Projects.</span>
+              Featured/Upcoming
+              <span class="text-primary-brand">Projects.</span>
             </h2>
             <p class="text-sm md:text-[18px] text-neutral">
               See what our memebers are building together.
@@ -434,17 +440,19 @@
             <!-- Product Card -->
             <div class="p-8 rounded-xl border border-brand/20">
               <!-- Title -->
-              <div class="flex justify-between items-center">
+              <div
+                class="flex flex-col md:justify-between md:items-center mb-5"
+              >
                 <h3 class="text-xl md:text-2xl font-semibold mb-3">
                   LedgrX - Expense Tracker Web Application
                 </h3>
                 <label
-                  class="px-4 py-1 border border-green-700 rounded-full bg-green-300 text-green-700 text-xs md:text-sm"
+                  class="px-4 py-0.5 border border-green-700 rounded-full bg-green-200 text-green-700 text-xs md:text-sm self-end"
                   >In progress</label
                 >
               </div>
               <!-- Product description -->
-              <p class="text-neutral mb-3">
+              <p class="text-neutral mb-3 text-sm md:text-[18px]">
                 A production-ready personal finance web application featuring
                 authentication, transaction management, analytics dashboards,
                 budgets, recurring expenses, and responsive mobile support.
@@ -455,33 +463,35 @@
                 <li></li>
                 <li></li>
               </ul>
-              <ul class="flex gap-3 mb-6">
+              <ul class="flex gap-3 my-6">
                 <li
-                  class="px-4 py-0.5 border border-amber-700 text-amber-700 rounded-full"
+                  class="px-4 py-0.5 text-xs flex items-center border border-brand/20 text-neutral rounded-md bg-brand/2"
                 >
                   React
                 </li>
                 <li
-                  class="px-4 py-0.5 border border-amber-700 text-amber-700 rounded-full"
+                  class="px-4 py-0.5 text-xs flex items-center border border-brand/20 text-neutral rounded-md bg-brand/2"
                 >
                   NodeJs
                 </li>
                 <li
-                  class="px-4 py-0.5 border border-amber-700 text-amber-700 rounded-full"
+                  class="px-4 py-0.5 text-xs flex items-center border border-brand/20 text-neutral rounded-md bg-brand/2"
                 >
                   Figma
                 </li>
               </ul>
-              <span class="inline-block text-sm mb-3">12 Collaborators</span>
+              <span class="inline-block text-xs mb-3 text-neutral"
+                >12 Collaborators</span
+              >
               <div class="flex items-center gap-4">
                 <a
                   href="#github"
-                  class="block text-sm font-medium font-poppins text-primary-brand"
+                  class="block text-xs font-semibold font-poppins text-primary-brand"
                   >Github repo &rarr;</a
                 >
                 <a
                   href="#github"
-                  class="block text-sm font-medium font-poppins text-primary-brand"
+                  class="block text-xs font-semibold font-poppins text-primary-brand"
                   >View live &rarr;</a
                 >
               </div>

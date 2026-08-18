@@ -35,9 +35,9 @@
     @apply box-border;
   }
 
-  html {
+  /* html {
     scroll-behavior: smooth;
-  }
+  } */
 
   body {
     @apply font-poppins bg-background;
@@ -48,7 +48,11 @@
   }
 
   section {
-    scroll-margin-top: 50px;
+    @apply scroll-mt-56 md:scroll-mt-52 lg:scroll-mt-36;
+  }
+
+  button {
+    @apply cursor-pointer;
   }
 }
 

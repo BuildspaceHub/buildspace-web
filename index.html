@@ -30,6 +30,9 @@
     <title>BuildSpace Community — Learn, Build & Grow With Developers</title>
   </head>
   <body>
+    <marquee behavior="" direction="" class="bg-red-200 text-red-800 fixed bottom-0 left-0 right-0 p-1 z-60">
+     🚧 Buildspace community website still under construction ⚠️...  But you can still be part of us 🫂
+    </marquee>
     <header class="sticky top-0 z-100">
       <div class="p-4 bg-background flex justify-between shadow-2xs">
         <!-- LOGO -->
@@ -46,7 +49,11 @@
           <a href="#testimonials" class="px-2">Testimonials</a>
         </nav>
         <!-- MOBILE TOGGLE -->
-        <button id="mobile-toggle" class="md:hidden">
+        <button
+          id="mobile-toggle"
+          class="lg:hidden"
+          aria-roledescription="open mobile menu"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -65,18 +72,52 @@
           </svg>
         </button>
         <!-- CTA -->
-        <button class="btn-primary hidden md:block">Join Community</button>
+        <a
+          href="https://wa.me/2347085660421?text=Hello%20BuildSpace%2C%20I%27d%20like%20to%20join%20the%20community."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-primary hidden lg:block"
+          role="button"
+        >
+          Join Community
+        </a>
       </div>
       <!-- MOBILE NAV -->
       <nav
-        class="w-full max-h-0 bg-background overflow-hidden opacity-0 transition-all duration-700 ease-in-out"
         id="mobile-navbar"
+        class="lg:hidden w-full bg-background overflow-hidden max-h-0 opacity-0 -translate-y-2 transition-all duration-300 ease-in-out"
       >
         <div class="flex flex-col items-center gap-4 p-4">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#testimonials">Testimonials</a>
-          <button class="btn-primary">Join Community</button>
+          <a
+            href="#home"
+            class="mobile-nav-link hover:text-brand transition-colors duration-200"
+          >
+            Home
+          </a>
+
+          <a
+            href="#about"
+            class="mobile-nav-link hover:text-brand transition-colors duration-200"
+          >
+            About
+          </a>
+
+          <a
+            href="#testimonials"
+            class="mobile-nav-link hover:text-brand transition-colors duration-200"
+          >
+            Testimonials
+          </a>
+
+          <a
+            href="https://wa.me/2347085660421?text=Hello%20BuildSpace%2C%20I%27d%20like%20to%20join%20the%20community."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary"
+            role="button"
+          >
+            Join Community
+          </a>
         </div>
       </nav>
     </header>
@@ -94,7 +135,15 @@
             </h1>
             <!-- CTA -->
             <div class="flex justify-center gap-4">
-              <button class="btn-primary">Join community</button>
+              <a
+                href="https://wa.me/2347085660421?text=Hello%20BuildSpace%2C%20I%27d%20like%20to%20join%20the%20community."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary"
+                role="button"
+              >
+                Join Community
+              </a>
               <button class="btn-outline">View projects</button>
             </div>
           </div>
@@ -103,6 +152,7 @@
             <img
               src="./src/assets/Images/hero-illustration.jpg"
               alt="hero image illustration"
+              role="banner"
             />
           </div>
         </div>
@@ -213,9 +263,15 @@
               together.
             </p>
           </div>
-          <button class="btn-primary self-end lg:self-center">
-            Join community
-          </button>
+          <a
+            href="https://wa.me/2347085660421?text=Hello%20BuildSpace%2C%20I%27d%20like%20to%20join%20the%20community."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn-primary self-end lg:self-center"
+            role="button"
+          >
+            Join Community
+          </a>
         </div>
         <!-- CORE CARD GRID -->
         <div
@@ -282,6 +338,156 @@
               Everyone teaches. Everyone learns.
             </p>
           </div>
+        </div>
+      </section>
+      <!-- HOW IT WORKS -->
+      <section class="px-4 py-16 md:px-10 bg-background text-foreground">
+        <div class="flex flex-col lg:flex-row lg:gap-30">
+          <!-- ILLUSTRATION -->
+          <div class="w-full relative mb-10">
+            <div
+              class="absolute -top-2 -right-2 bg-brand w-1/2 h-1/2 rounded-2xl z-10 lg:-top-5 lg:-right-5"
+            ></div>
+            <div class="w-full overflow-hidden rounded-2xl relative z-20">
+              <img
+                src="./src/assets/Images/storyImageBg.jpg"
+                alt="team collaboration"
+              />
+            </div>
+          </div>
+          <!-- STEPS -->
+          <div class="w-full">
+            <h2 class="text-2xl mb-3 md:text-3xl font-semibold">
+              How it <span class="text-brand"> works?</span>
+            </h2>
+            <p class="text-sm text-neutral mb-3 md:text-xl">
+              Your journey from learner to contributor
+            </p>
+            <a
+              href="https://wa.me/2347085660421?text=Hello%20BuildSpace%2C%20I%27d%20like%20to%20join%20the%20community."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary mb-10 block w-fit"
+              role="button"
+            >
+              Join Community
+            </a>
+            <div class="space-y-8 grid grid-cols-2">
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >1</span
+                >
+                <p class="text-sm md:text-xl text-neutral">
+                  Join the Community
+                </p>
+              </div>
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >2</span
+                >
+                <p class="text-sm text-neutral md:text-xl">Choose Your Track</p>
+              </div>
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >3</span
+                >
+                <p class="text-sm text-neutral md:text-xl">Join a Team</p>
+              </div>
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >4</span
+                >
+                <p class="text-sm text-neutral md:text-xl">
+                  Build real products
+                </p>
+              </div>
+              <div class="pl-4 border-l-4 border-primary-brand space-y-2">
+                <span
+                  class="w-6 h-6 p-1 text-xs rounded-full flex items-center justify-center bg-brand text-background"
+                  >5</span
+                >
+                <p class="text-sm text-neutral md:text-xl">
+                  Grow your portfolio
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECTS -->
+      <section class="px-4 py-16 md:px-10">
+        <div>
+          <div class="text-center mb-10">
+            <h2 class="text-2xl md:text-3xl font-semibold mb-3">
+              Featured/Upcoming <span class="text-brand">Projects.</span>
+            </h2>
+            <p class="text-sm md:text-[18px] text-neutral">
+              See what our memebers are building together.
+            </p>
+          </div>
+          <!-- PROJECTS -->
+          <div>
+            <!-- Product Card -->
+            <div class="p-8 rounded-xl border border-brand/20">
+              <!-- Title -->
+              <div class="flex justify-between items-center">
+                <h3 class="text-xl md:text-2xl font-semibold mb-3">
+                  LedgrX - Expense Tracker Web Application
+                </h3>
+                <label
+                  class="px-4 py-1 border border-green-700 rounded-full bg-green-300 text-green-700 text-xs md:text-sm"
+                  >In progress</label
+                >
+              </div>
+              <!-- Product description -->
+              <p class="text-neutral mb-3">
+                A production-ready personal finance web application featuring
+                authentication, transaction management, analytics dashboards,
+                budgets, recurring expenses, and responsive mobile support.
+              </p>
+              <!--  -->
+              <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="flex gap-3 mb-6">
+                <li
+                  class="px-4 py-0.5 border border-amber-700 text-amber-700 rounded-full"
+                >
+                  React
+                </li>
+                <li
+                  class="px-4 py-0.5 border border-amber-700 text-amber-700 rounded-full"
+                >
+                  NodeJs
+                </li>
+                <li
+                  class="px-4 py-0.5 border border-amber-700 text-amber-700 rounded-full"
+                >
+                  Figma
+                </li>
+              </ul>
+              <span class="inline-block text-sm mb-3">12 Collaborators</span>
+              <div class="flex items-center gap-4">
+                <a
+                  href="#github"
+                  class="block text-sm font-medium font-poppins text-primary-brand"
+                  >Github repo &rarr;</a
+                >
+                <a
+                  href="#github"
+                  class="block text-sm font-medium font-poppins text-primary-brand"
+                  >View live &rarr;</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- UPCOMING PROJECTS -->
         </div>
       </section>
       <!-- TESTIMONIALS SECTION  -->
